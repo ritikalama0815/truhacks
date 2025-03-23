@@ -17,7 +17,7 @@ Plawnet is an **e-commerce platform** designed to make sustainable shopping **af
 - **Home Page** – Displays recently listed products.  
 - **Collections** – Allows users to browse, filter, and sort items based on price.  
 
-##  **How We Built It**  
+##  **How was It Built**  
 - **Frontend:** React.js for a dynamic and responsive UI, with CSS for styling.  
 - **Backend:** Node.js with Express.js for handling API requests.  
 - **Database:** MongoDB for product listings and user data.  
@@ -26,7 +26,7 @@ Plawnet is an **e-commerce platform** designed to make sustainable shopping **af
 - **Tailwind CSS Issues** – We initially installed **Tailwind v4**, which wasn’t compatible with React. Even after downgrading to v3, we faced **plugin and dependency errors**. Eventually, we switched to **CSS** for styling.  
 - **Time Constraints** – Developing a functional MVP within the hackathon timeframe.  
 - **User Experience Optimization** – Ensuring a smooth, intuitive, and secure marketplace.  
-- **Prototype Change** – Initially, we planned a **game development project** and even designed characters and maps. However, due to time constraints and lack of experience in game development, we pivoted to a **web application**, which cost us valuable time.  
+- **Prototype Change** – Initially, we planned a **game development project** and even designed characters and maps. However, due to time constraints and a lack of experience in game development, we pivoted to a **web application**, which cost us valuable time.  
 
 ##  **Accomplishments That We're Proud Of**  
 - Successfully built a **working web app** within the hackathon’s time limit.  
