@@ -1,0 +1,10 @@
+
+/* @import "tailwindcss"; */
+/* filepath: /Users/ritika0815/Desktop/untitled folder/frontend/src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr{
+    display: block;
+}
