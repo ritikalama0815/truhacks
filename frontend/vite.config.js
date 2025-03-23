@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   assetsInclude: ['**/*.PNG'],
   plugins: [react()],
+  server: {port: 5173},
 })
