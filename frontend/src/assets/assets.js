@@ -23,6 +23,8 @@ import socks from './socks.jpeg'
 import speaker from './speaker.webp'
 import trashbags from './trashbags.jpeg'
 import wraps from './wraps.jpeg'
+import exchange from './exchange.PNG'
+import support from './service.PNG'
 
 export const assets = {
     logo,
@@ -35,6 +37,7 @@ export const assets = {
     socks,
     speaker,
     trashbags,
+    exchange,
     wraps,
     search_icon,
     profile_icon,
@@ -45,6 +48,7 @@ export const assets = {
     plate,
     shirt,
     solar,
+    support,
     sunglass,
     toothbrush,
     cup,
@@ -61,7 +65,7 @@ export const products = [
         description: "A beautiful wooden cup made from the finest oak.",
         price: "20.00",
         image: cup,
-        category: "Utils",
+        category: "Kitchen",
         date: "2023-10-01",
     },
     {
@@ -70,7 +74,7 @@ export const products = [
         description: "A handcrafted ceramic plate.",
         price: "15.00",
         image: plate,
-        category: "Utils",
+        category: "Kitchen",
         date: "2023-10-02",
     },
     {
@@ -79,7 +83,7 @@ export const products = [
         description: "An eco-friendly toothbrush made from sustainable bamboo.",
         price: "5.00",
         image: toothbrush,
-        category: "Personal Care",
+        category: "Care",
         date: "2023-10-03",
     },
     {
@@ -88,7 +92,7 @@ export const products = [
         description: "A durable and reusable cotton shopping bag.",
         price: "8.00",
         image: hero_img,
-        category: "Accessories",
+        category: "Fashion",
         date: "2023-10-04",
     },
     {
@@ -97,7 +101,7 @@ export const products = [
         description: "A notebook made from 100% recycled paper.",
         price: "12.00",
         image: notebook,
-        category: "Stationery",
+        category: "Mis",
         date: "2023-10-05",
     },
     {
@@ -133,7 +137,7 @@ export const products = [
         description: "A reusable bamboo cutlery set for sustainable dining.",
         price: "10.00",
         image: hero_img,
-        category: "Kitchenware",
+        category: "Kitchen",
         date: "2023-10-09",
     },
     {
@@ -142,7 +146,7 @@ export const products = [
         description: "A sturdy and eco-friendly backpack made from hemp.",
         price: "40.00",
         image: hemp,
-        category: "Accessories",
+        category: "Mis",
         date: "2023-10-10",
     },
     {
@@ -151,7 +155,7 @@ export const products = [
         description: "A durable glass water bottle with a bamboo l_id.",
         price: "22.00",
         image: bottle,
-        category: "Kitchenware",
+        category: "Kitchen",
         date: "2023-10-11",
     },
     {
@@ -178,7 +182,7 @@ export const products = [
         description: "Eco-friendly trash bags that decompose naturally.",
         price: "12.00",
         image: trashbags,
-        category: "Utils",
+        category: "Kitchen",
         date: "2023-10-14",
     },
     {
@@ -187,7 +191,7 @@ export const products = [
         description: "A beautiful rug made from sustainable jute fiber.",
         price: "55.00",
         image: rug,
-        category: "Home Decor",
+        category: "Mis",
         date: "2023-10-15",
     },
     {
@@ -196,7 +200,7 @@ export const products = [
         description: "A sleek and stylish pen made from recycled aluminum.",
         price: "7.00",
         image: pen,
-        category: "Stationery",
+        category: "Mis",
         date: "2023-10-16",
     },
     {
@@ -214,7 +218,7 @@ export const products = [
         description: "A non-toxic yoga mat made from sustainable materials.",
         price: "35.00",
         image: mat,
-        category: "Fitness",
+        category: "Care",
         date: "2023-10-18",
     },
     {
@@ -223,7 +227,7 @@ export const products = [
         description: "Reusable wraps made from organic cotton and beeswax.",
         price: "16.00",
         image: wraps,
-        category: "Kitchenware",
+        category: "Kitchen",
         date: "2023-10-19",
     },
     {
