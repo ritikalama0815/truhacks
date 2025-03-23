@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
 import { Link, NavLink } from 'react-router-dom'
+import { ShopContext } from '../context/ShopContext'
 import "../index.css"
 
 const Navbar = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
-//   const [visible, setVisible] = useState(false);
+  const {setShowSearch} = useContext(ShopContext);
 
   return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '5px 0', fontWeight: '500', marginRight: '50px' }}>
@@ -31,7 +32,7 @@ const Navbar = () => {
         </NavLink>
       </ul>
       <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
-        <img src={assets.search_icon} style={{ width: '59px', height: '57px', cursor: 'pointer' }} alt="" />
+        <img onClick={()=>setShowSearch(true)}src={assets.search_icon} style={{ width: '59px', height: '57px', cursor: 'pointer' }} alt="" />
         <div style={{ position: 'relative' }}>
           <img
             src={assets.profile_icon}
