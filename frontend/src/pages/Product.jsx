@@ -4,7 +4,7 @@ import { ShopContext } from '../context/ShopContext';
 
 const Product = () => {
   const { productId } = useParams();
-  const { products, currency } = useContext(ShopContext);
+  const { products, currency, addToCart } = useContext(ShopContext);
   const [productData, setProductData] = useState(null);
   const [image, setImage] = useState('');
 
@@ -30,12 +30,18 @@ const Product = () => {
           <h1 style={{ fontWeight: '500', fontSize: '2rem', marginTop: '0.5rem' }}>{productData.name}</h1>
           <p style={{ marginTop: '1.25rem', fontSize: '3rem', fontWeight: '500' }}>{currency}{productData.price}</p>
           <p style={{ marginTop: '1.25rem', fontSize: '1.5rem', fontWeight: '100' }}>{productData.description}</p>
-          <button style={{ backgroundColor: 'black', color: 'white', padding: '0.75rem 2rem', fontSize: '0.875rem', cursor: 'pointer', border: 'none', borderRadius: '0.25rem', marginTop: '1.25rem' }}>
+          <button onClick={()=>addToCart(productData._id)} style={{ backgroundColor: 'black', color: 'white', padding: '0.75rem 2rem', fontSize: '0.875rem', cursor: 'pointer', border: 'none', borderRadius: '0.25rem', marginTop: '1.25rem' }}>
             Add to Cart
           </button>
           <hr style={{marginTop:'45px'}}/>
+          <div style={{ fontSize: '18px', color: '#6B7280', marginTop: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+            <p>Product's Design is same as the picture.</p>
+            <p>Free Delivery Over $20 orders.</p>
+            <p>Return and Exchange within 15 days.</p>
+        </div>
         </div>
       </div>
+
     </div>
   ) : <div style={{ opacity: 0 }} />;
 };

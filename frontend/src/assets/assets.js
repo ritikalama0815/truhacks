@@ -11,28 +11,32 @@ import solar from './solar.jpg'
 import sunglass from './sunglass.jpg'
 import toothbrush from './toothbrush.jpg'
 import cup from './cup.jpg'
-import bamboo from './bamboo.jpeg'
-import bottle from './bottle.jpeg'
-import case_img from './case.jpeg'
-import hemp from './hemp.jpeg'
-import lamp from './lamp.jpeg'
+import bamboo from './bamboo.jpg'
+import bottle from './bottle.jpg'
+import case_img from './case.jpg'
+import hemp from './hemp.jpg'
+import lamp from './lamp.jpg'
 import mat from './mat.jpg'
-import pen from './pen.jpeg'
-import rug from './rug.jpeg'
-import socks from './socks.jpeg'
+import pen from './pen.jpg'
+import rug from './rug.jpg'
+import socks from './socks.jpg'
 import speaker from './speaker.webp'
-import trashbags from './trashbags.jpeg'
-import wraps from './wraps.jpeg'
+import trashbags from './trashbags.jpg'
+import wraps from './wraps.jpg'
 import exchange from './exchange.PNG'
 import support from './service.PNG'
 import cross from './cross.PNG'
+import bin from './delete.PNG'
+import card from './card.PNG'
 
 export const assets = {
     logo,
     bottle,
     hemp,
+    card,
     cross,
     lamp,
+    bin,
     mat,
     pen,
     rug,
@@ -138,7 +142,7 @@ export const products = [
         name: "Bamboo Cutlery Set",
         description: "A reusable bamboo cutlery set for sustainable dining.",
         price: "10.00",
-        image: [hero_img],
+        image: [bamboo],
         category: "Kitchen",
         date: "2023-10-09",
     },

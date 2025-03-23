@@ -6,12 +6,12 @@ import "../index.css"
 
 const Navbar = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
-  const {setShowSearch} = useContext(ShopContext);
+  const {setShowSearch, getCartCount } = useContext(ShopContext);
 
   return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '5px 0', fontWeight: '500', marginRight: '50px' }}>
       
-      <Link to='/' ><img src={assets.logo} style={{ width: '125px', height: '125px', marginLeft: '50px' }} alt="Logo" /></Link>
+      <Link to='/' ><img src={assets.logo} style={{ width: '250px', height: '250px', marginLeft: '50px' }} alt="Logo" /></Link>
       
       <ul style={{ display: 'flex', gap: '20px', fontSize: '0.875rem', color: '#4B5563' }}>
         <NavLink to='/' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', fontSize: '20px' }}>
@@ -22,24 +22,24 @@ const Navbar = () => {
           <p>Collections</p>
           <hr style={{ width: '50%', border: 'none', height: '1.5px', backgroundColor: '#4B5563' }} />
         </NavLink>
-        <NavLink to='/contact' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', fontSize: '20px' }}>
+        {/* <NavLink to='/contact' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', fontSize: '20px' }}>
           <p>Contact</p>
           <hr style={{ width: '50%', border: 'none', height: '1.5px', backgroundColor: '#4B5563' }} />
         </NavLink>
         <NavLink to='/about' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', fontSize: '20px' }}>
           <p>About</p>
           <hr style={{ width: '50%', border: 'none', height: '1.5px', backgroundColor: '#4B5563' }} />
-        </NavLink>
+        </NavLink> */}
       </ul>
       <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
         <img onClick={()=>setShowSearch(true)}src={assets.search_icon} style={{ width: '59px', height: '57px', cursor: 'pointer' }} alt="" />
         <div style={{ position: 'relative' }}>
-          <img
+          <Link to='/login'><img
             src={assets.profile_icon}
             style={{ width: '45px', height: '44px', cursor: 'pointer' }}
             alt=""
             onClick={() => setDropdownVisible(!dropdownVisible)}
-          />
+          /></Link>
           {dropdownVisible && (
             <div
               style={{
@@ -107,7 +107,7 @@ const Navbar = () => {
                     borderRadius: '9999px', // rounded-full
                     fontSize: '10px',
                 }}
-                > 10</p>
+                > {getCartCount()}</p>
 
         </Link>
         

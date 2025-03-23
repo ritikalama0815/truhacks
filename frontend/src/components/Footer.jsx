@@ -6,8 +6,8 @@ const Footer = () => {
     <div>
       <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', gap: '3.5rem', margin: '2.5rem 0', marginTop: '0rem', fontSize: '0.875rem' }}>
         <div style={{ textAlign: 'left', width: '50%' }}>
-          <img src={assets.logo} alt='' style={{ width: '8rem', marginTop: '1.25rem' }} />
-          <p style={{ color: '#6B7280' }}>
+          <img src={assets.logo} alt='' style={{ width: '250px', marginTop: '1rem' }} />
+          <p style={{ color: '#6B7280' , marginTop: '1px'}}>
             Discover eco-friendly products at affordable prices! 
             <br></br>Our collection features sustainable alternatives, from biodegradable essentials to reusable everyday 
             <br></br>items—all designed to help you reduce waste without overspending. 
