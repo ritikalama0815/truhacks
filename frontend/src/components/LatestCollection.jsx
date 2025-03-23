@@ -17,8 +17,8 @@ const LatestCollection = () => {
     <div style={{ margin: '2.5rem 0' }}>
       <div style={{ textAlign: 'center', padding: '2rem 0', fontSize: '1.875rem' }}>
         <Title text1={'Latest'} text2={'Collections'} />
-        <p style={{ width: '75%', margin: 'auto', fontSize: '16px', color: '#4b5563' }}>
-          My name is Ritika lama huhuhu
+        <p style={{ width: '75%', margin: 'auto', fontSize: '20px', color: '#4b5563' }}>
+        ₊✩‧₊˚౨ Recent Arrivals ৎ˚₊✩‧₊
         </p>
       </div>
       {/* rendering products */}
